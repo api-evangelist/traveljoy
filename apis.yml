@@ -1,7 +1,25 @@
 aid: traveljoy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/traveljoy.png
 name: TravelJoy
-description: 'TravelJoy is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'TravelJoy is software for travel advisors and agencies — a client CRM, itinerary
+  and proposal builder, secure payment collection, forms and questionnaires, and automated
+  client communication combined in one platform. Travel professionals use it to manage
+  trips, capture and nurture leads, send branded proposals, gather traveler details, and
+  collect payments. Surfaced as a portfolio company of GV (Google Ventures) and added to
+  the API Evangelist network. As of this enrichment pass TravelJoy publishes no public API,
+  developer portal, or SDK program; this profile tracks its identity and public web
+  properties for discovery.'
 url: https://raw.githubusercontent.com/api-evangelist/traveljoy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Travel
+- Travel Agency
+- CRM
+- Itinerary
+- Payments
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +47,27 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://traveljoy.com
+  url: https://traveljoy.com
+- type: Pricing
+  url: https://traveljoy.com/pricing.html
+- type: TermsOfService
+  url: https://traveljoy.com/terms.html
+- type: PrivacyPolicy
+  url: https://traveljoy.com/privacy
+- type: Blog
+  url: https://traveljoy.com/blog
+- type: SignUp
+  url: https://traveljoy.com/users/sign_up
+- type: Login
+  url: https://traveljoy.com/users/sign_in
+- type: Support
+  url: https://help.traveljoy.com/
+- type: StatusPage
+  url: https://status.traveljoy.com
+- type: DomainSecurity
+  url: security/traveljoy-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
