@@ -38,6 +38,15 @@ tags:
 - CRM
 - Itinerary
 - Payments
+- Software-as-a-Service
+tags_raw:
+- Company
+- Consumer
+- Travel
+- Travel Agency
+- CRM
+- Itinerary
+- Payments
 - SaaS
 apis: []
 maintainers:
