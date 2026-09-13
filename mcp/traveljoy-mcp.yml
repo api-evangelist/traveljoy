@@ -1,0 +1,53 @@
+generated: '2026-09-11'
+method: probed
+source: https://traveljoy.com/mcp
+status: published
+server:
+  name: traveljoy
+  transport: http
+  url: https://traveljoy.com/mcp
+deployment:
+  mode: remote
+  endpoint: https://traveljoy.com/mcp
+  verified: probed
+  probe: live
+  checked: '2026-09-11'
+  source: docs-check 2026-09-12 (endpoint found in the provider's own documentation, then probed)
+tools_count: 17
+tools:
+- name: ProposalToolsV1WebsiteScraperTool
+  description: ''
+- name: ProposalToolsV1UpdateTitleComponentTool
+  description: ''
+- name: ProposalToolsV1UpdateItemTool
+  description: ''
+- name: ProposalToolsV1RemoveComponentsTool
+  description: ''
+- name: ProposalToolsV1ProofreadItineraryTool
+  description: ''
+- name: ProposalToolsV1LodgingSearchTool
+  description: ''
+- name: ProposalToolsV1ImageSearchTool
+  description: ''
+- name: ProposalToolsV1GetTripDetailsTool
+  description: ''
+- name: ProposalToolsV1GetItinerarySummaryTool
+  description: ''
+- name: ProposalToolsV1GetItineraryStructureTool
+  description: ''
+- name: ProposalToolsV1GetComponentDetailsTool
+  description: ''
+- name: ProposalToolsV1DuplicateMentionedProposalTool
+  description: ''
+- name: ProposalToolsV1DuplicateMentionedLibraryComponentsTool
+  description: ''
+- name: ProposalToolsV1CruiseSearchTool
+  description: ''
+- name: ProposalToolsV1CreateItemsTool
+  description: ''
+- name: ProposalToolsV1AddUnsplashPhotosToItemTool
+  description: ''
+- name: WebsiteScraperTool
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
+authorship: provider
