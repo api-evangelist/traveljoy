@@ -16,38 +16,58 @@ deployment:
 tools_count: 17
 tools:
 - name: ProposalToolsV1WebsiteScraperTool
-  description: ''
+  description: Scrape a website and return the content and images.
 - name: ProposalToolsV1UpdateTitleComponentTool
-  description: ''
+  description: Update the title, description, cover photo, total cost, and deposit amount on the proposal.
 - name: ProposalToolsV1UpdateItemTool
-  description: ''
+  description: Make changes to existing components (items or sections), including removing image attachments.
 - name: ProposalToolsV1RemoveComponentsTool
-  description: ''
+  description: After getting the component tokens from GetItinerarySummaryTool, remove component(s) from
+    the proposal.
 - name: ProposalToolsV1ProofreadItineraryTool
-  description: ''
+  description: Check the itinerary for errors, discrepancies, and potential issues that could impact client
+    experience.
 - name: ProposalToolsV1LodgingSearchTool
-  description: ''
+  description: Search for lodging properties to find potential matches. Returns entities with details
+    to help you choose the best match. Use this when you need to identify specific lodging properties
+    to add to the itinerary. Returns up to 25 results per s
 - name: ProposalToolsV1ImageSearchTool
-  description: ''
+  description: Search for images to find the best matches. Returns images with metadata to help you choose
+    the best match. Use for vendor_image_ids on creates/updates for subtypes that use that flow. Do not
+    use for creating restaurant, cruise, or lodging
 - name: ProposalToolsV1GetTripDetailsTool
-  description: ''
+  description: Get the details of the trip associated with the itinerary.
 - name: ProposalToolsV1GetItinerarySummaryTool
-  description: ''
+  description: Get a summary view of the itinerary structure organized as a tree, including component
+    tokens, names, subtypes, and truncated component descriptions. The itinerary-level title and introduction/description
+    are returned in full. Use GetCompon
 - name: ProposalToolsV1GetItineraryStructureTool
-  description: ''
+  description: DEPRECATED — Use GetItinerarySummaryTool for itinerary structure (summary) and GetComponentDetailsTool
+    for full details by token. This tool still works for backward compatibility.
 - name: ProposalToolsV1GetComponentDetailsTool
-  description: ''
+  description: Get full details for one or more itinerary components by token. Use this when you need
+    complete information like full descriptions, all data fields, image attachments, or document attachments
+    for specific items.
 - name: ProposalToolsV1DuplicateMentionedProposalTool
-  description: ''
+  description: Duplicate or append items from a mentioned proposal to the current proposal. The user can
+    choose to either start from the mentioned proposal (replacing all current items) or add items from
+    it (appending to the end).
 - name: ProposalToolsV1DuplicateMentionedLibraryComponentsTool
-  description: ''
+  description: Duplicate one or more mentioned library components onto the current proposal. Each component
+    can have different positioning parameters and will be duplicated independently.
 - name: ProposalToolsV1CruiseSearchTool
-  description: ''
+  description: 'Search for cruises to find potential matches. Returns cruises with details to help you
+    choose the best match. Use this when you need to identify specific cruises to add to the itinerary.
+    Returns up to 25 results per search. IMPORTANT: ship_'
 - name: ProposalToolsV1CreateItemsTool
-  description: ''
+  description: Create one or more itinerary components (items, sections, options, or option sets). Subtype
+    is automatically inferred from the object key (e.g., flight:, activity:, restaurant:, section:, option:,
+    option_set:). Components can have different
 - name: ProposalToolsV1AddUnsplashPhotosToItemTool
-  description: ''
+  description: DEPRECATED — use UpdateItemTool instead
 - name: WebsiteScraperTool
-  description: ''
+  description: Scrape a website and return the content as an html string.
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
